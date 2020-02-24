@@ -1,7 +1,5 @@
 package com.outlook;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +14,7 @@ public class LoginSmokeTest extends TestCase {
 		String email = "sparktestsuite@outlook.com";
 		String password = "testSuitePassword1!";
 		
+		//Setup
     	System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();		
 		driver.manage().window().maximize();
@@ -52,7 +51,4 @@ public class LoginSmokeTest extends TestCase {
         driver.close();
         driver.quit();
     }
-	
-	
-
 }
